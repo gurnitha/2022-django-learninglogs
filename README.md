@@ -438,6 +438,11 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/base.html
 
 
+#### 23. Styling the Home Page Using a Jumbotron
+
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/index.html
+
 
 
 
