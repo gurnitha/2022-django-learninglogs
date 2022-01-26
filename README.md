@@ -13,3 +13,16 @@ Github repository: https://github.com/gurnitha/2022-django-learninglogs
         new file:   learning_log/wsgi.py
         new file:   manage.py
 
+
+#### 2. Creating an app 'learning_logs'
+
+        modified:   README.md
+        modified:   learning_log/settings.py
+        new file:   learning_logs/__init__.py
+        new file:   learning_logs/admin.py
+        new file:   learning_logs/apps.py
+        new file:   learning_logs/migrations/__init__.py
+        new file:   learning_logs/models.py
+        new file:   learning_logs/tests.py
+        new file:   learning_logs/views.py
+
