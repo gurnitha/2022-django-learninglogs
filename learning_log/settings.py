@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     
     # Locals
+    'users.apps.UsersConfig',
     'learning_logs.apps.LearningLogsConfig',
 
     # Default apps

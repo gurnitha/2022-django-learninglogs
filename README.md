@@ -110,3 +110,19 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/topic.html
         modified:   learning_logs/urls.py
         modified:   learning_logs/views.py
+
+
+### User Accounts: Setting Up User Accounts
+-------------------------------------------
+
+#### 12. Create users app
+
+        modified:   README.md
+        modified:   learning_log/settings.py
+        new file:   users/__init__.py
+        new file:   users/admin.py
+        new file:   users/apps.py
+        new file:   users/migrations/__init__.py
+        new file:   users/models.py
+        new file:   users/tests.py
+        new file:   users/views.py
