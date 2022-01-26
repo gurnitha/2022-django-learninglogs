@@ -204,3 +204,79 @@ Making Pages:
         modified:   README.md
         modified:   learning_log/settings.py
         modified:   learning_logs/views.py
+
+
+#### 17. Connecting Data to Certain Users
+
+        STEPS:
+
+        In learning_logs/model.py
+        
+        1. Import from django.contrib.auth.models import User  
+        2. Modifying the Topic Model
+        3. Identifying Existing Users
+
+                (learninglogs) λ python manage.py shell
+                Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC         v.1928 64 bit (AMD64)] on win32
+                Type "help", "copyright", "credits" or "license" for more information.
+                (InteractiveConsole)
+                >>>
+                >>> from django.contrib.auth.models import User
+                >>> User.objects.all()
+                <QuerySet [<User: admin>, <User: testuser1>]>
+                >>>
+                >>> for user in User.objects.all():
+                ...     print(user.username, user.id)
+                ...
+                admin 1
+                testuser1 2
+                >>>
+
+        4. Migrating the Database
+
+                (learninglogs) λ python manage.py makemigrations learning_logs
+                You are trying to add a non-nullable field 'owner' to topic without a default; we can't do that (the database needs something to populate existing rows).
+                Please select a fix:
+                 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+                 2) Quit, and let me add a default in models.py
+                Select an option: 1
+                Please enter the default value now, as valid Python
+                The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+                Type 'exit' to exit this prompt
+                >>> 1
+                Migrations for 'learning_logs':
+                  learning_logs\migrations\0003_topic_owner.py
+                    - Add field owner to topic
+                
+                ...
+                (learninglogs) λ python manage.py migrate
+
+        5. We can verify that the migration worked
+
+                (learninglogs) λ python manage.py shell
+                Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+                Type "help", "copyright", "credits" or "license" for more information.
+                (InteractiveConsole)
+                >>>
+                >>> from learning_logs.models import Topic
+                >>> for topic in Topic.objects.all():
+                ...     print(topic, topic.owner)
+                ...
+                Topic 1 admin
+                Topic 2 admin
+                Topic 3 admin
+                Topic 4 admin
+                Topic 5 admin
+                Test1 topic admin
+                Test1 topic admin
+                Topic 1 of testuser1 admin
+                >>>
+
+                NOTE:
+
+                Now all topics is belongs to the admin because we added admin id of 1
+                in the python shell
+
+        modified:   README.md
+        modified:   learning_logs/migrations/0003_topic_owner.py
+        modified:   learning_logs/models.py
