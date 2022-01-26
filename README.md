@@ -55,3 +55,8 @@ Making Pages:
         modified:   learning_logs/views.py
 
 
+#### 6. Create base template 
+
+        modified:   README.md
+        new file:   learning_logs/templates/learning_logs/base.html
+        modified:   learning_logs/templates/learning_logs/index.html
