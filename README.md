@@ -454,3 +454,9 @@ Making Pages:
 
         modified:   README.md
         modified:   learning_logs/templates/learning_logs/topics.html
+
+
+#### 26. Styling the Entries on the Topic Page
+
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/topic.html
