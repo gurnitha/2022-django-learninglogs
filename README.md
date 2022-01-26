@@ -33,3 +33,11 @@ Github repository: https://github.com/gurnitha/2022-django-learninglogs
         modified:   learning_logs/admin.py
         new file:   learning_logs/migrations/0001_initial.py
         modified:   learning_logs/models.py
+
+
+#### 4. Create Entry model, run migrations, added some topics and entries
+
+        modified:   README.md
+        modified:   learning_logs/admin.py
+        new file:   learning_logs/migrations/0002_entry.py
+        modified:   learning_logs/models.py
