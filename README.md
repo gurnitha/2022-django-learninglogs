@@ -91,3 +91,13 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/topics.html
         modified:   learning_logs/urls.py
         modified:   learning_logs/views.py
+
+
+#### 10. Adding New Entries
+
+        modified:   README.md
+        modified:   learning_logs/forms.py
+        new file:   learning_logs/templates/learning_logs/new_entry.html
+        modified:   learning_logs/templates/learning_logs/topic.html
+        modified:   learning_logs/urls.py
+        modified:   learning_logs/views.py

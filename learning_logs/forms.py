@@ -4,7 +4,7 @@
 from django import forms
 
 # Locals
-from .models import Topic
+from .models import Topic, Entry
 
 # Create your form here.
 
@@ -14,3 +14,11 @@ class TopicForm(forms.ModelForm):
         model = Topic
         fields = ['text']
         labels = {'text': ''}
+
+
+class EntryForm(forms.ModelForm):
+    class Meta:
+        model = Entry
+        fields = ['text']
+        labels = {'text': 'Entry:'}
+        widgets = {'text': forms.Textarea(attrs={'cols': 80})}
