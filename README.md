@@ -161,3 +161,20 @@ Making Pages:
         modified:   README.md
         modified:   learning_logs/templates/learning_logs/base.html
         new file:   users/templates/registration/logged_out.html
+
+
+#### 15. The Registration Page
+
+        STEPS:
+
+        1. The register URL
+        2. The register() View Function
+        3. The register Template
+        4. Linking to the Registration Page
+        
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/base.html
+        modified:   learning_logs/templates/learning_logs/topics.html
+        new file:   users/templates/registration/register.html
+        modified:   users/urls.py
+        modified:   users/views.py
