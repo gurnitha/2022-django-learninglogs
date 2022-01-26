@@ -41,3 +41,17 @@ Github repository: https://github.com/gurnitha/2022-django-learninglogs
         modified:   learning_logs/admin.py
         new file:   learning_logs/migrations/0002_entry.py
         modified:   learning_logs/models.py
+
+
+Making Pages: 
+-------------
+
+#### 5. Create the Learning Log Home Page: Views, Templates, Urls
+
+        modified:   README.md
+        modified:   learning_log/urls.py
+        new file:   learning_logs/templates/learning_logs/index.html
+        new file:   learning_logs/urls.py
+        modified:   learning_logs/views.py
+
+
