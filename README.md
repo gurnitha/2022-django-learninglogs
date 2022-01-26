@@ -349,4 +349,34 @@ Making Pages:
         modified:   learning_logs/views.py  
 
 
+#### 20. Protecting the edit_entry Page
+
+        The edit_entry pages have URLs in the form 
+        http://localhost:8000/edit_entry/entry_id/, 
+        where the entry_id is a number. 
+
+        Let’s protect this page so no one can use the 
+        URL to gain access to someone else’s entries:
+
+        STEPS:
+
+        1. Add this to edit_topic view method
+
+                if topic.owner != request.user:
+                raise Http404
+
+        2. Test it out :)
+
+        NOTE:
+
+        1. If admin logged in, and try to go here
+           http://127.0.0.1:8000/edit_entry/8/
+
+           It will response with:
+
+           Page not found (404)
+
+        modified:   README.md
+        modified:   learning_logs/views.py
+
 
