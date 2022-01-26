@@ -143,10 +143,21 @@ Making Pages:
            - Login as admin
            - You will see 'Hello, admin'
            - :)
-           
+
         modified:   README.md
         modified:   learning_log/urls.py
         modified:   learning_logs/templates/learning_logs/base.html
         new file:   users/templates/registration/login.html
         new file:   users/urls.py
 
+
+#### 14. Logging Out
+
+        STEPS:
+
+        1. Adding a Logout Link to base.htm
+        2. The Logout Confirmation Page
+
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/base.html
+        new file:   users/templates/registration/logged_out.html
