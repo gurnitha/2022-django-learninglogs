@@ -78,3 +78,16 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/topics.html
         modified:   learning_logs/urls.py
         modified:   learning_logs/views.py
+
+
+### User Accounts: Allowing Users to Enter Data
+-----------------------------------------------
+
+### 9. Adding New Topics 
+
+        modified:   README.md
+        new file:   learning_logs/forms.py
+        new file:   learning_logs/templates/learning_logs/new_topic.html
+        modified:   learning_logs/templates/learning_logs/topics.html
+        modified:   learning_logs/urls.py
+        modified:   learning_logs/views.py
