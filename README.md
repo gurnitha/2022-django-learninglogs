@@ -450,4 +450,7 @@ Making Pages:
         modified:   users/templates/registration/login.html
 
 
+#### 25. Styling the Topics Page
 
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/topics.html
