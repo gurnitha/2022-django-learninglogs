@@ -60,3 +60,12 @@ Making Pages:
         modified:   README.md
         new file:   learning_logs/templates/learning_logs/base.html
         modified:   learning_logs/templates/learning_logs/index.html
+
+
+#### 7. Create topics (list of topics) page 
+
+        modified:   README.md
+        modified:   learning_logs/templates/learning_logs/base.html
+        new file:   learning_logs/templates/learning_logs/topics.html
+        modified:   learning_logs/urls.py
+        modified:   learning_logs/views.py
