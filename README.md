@@ -101,3 +101,12 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/topic.html
         modified:   learning_logs/urls.py
         modified:   learning_logs/views.py
+
+
+#### 11. Editing Entries
+
+        modified:   README.md
+        new file:   learning_logs/templates/learning_logs/edit_entry.html
+        modified:   learning_logs/templates/learning_logs/topic.html
+        modified:   learning_logs/urls.py
+        modified:   learning_logs/views.py
