@@ -444,5 +444,10 @@ Making Pages:
         modified:   learning_logs/templates/learning_logs/index.html
 
 
+#### 24. Styling the Login Page
+
+        modified:   README.md
+        modified:   users/templates/registration/login.html
+
 
 
