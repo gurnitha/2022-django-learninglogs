@@ -171,10 +171,36 @@ Making Pages:
         2. The register() View Function
         3. The register Template
         4. Linking to the Registration Page
-        
+
         modified:   README.md
         modified:   learning_logs/templates/learning_logs/base.html
         modified:   learning_logs/templates/learning_logs/topics.html
         new file:   users/templates/registration/register.html
         modified:   users/urls.py
         modified:   users/views.py
+
+
+### User Accounts: Allowing Users to Own Their Data
+---------------------------------------------------
+
+
+#### 16. Restricting Access with @login_required
+
+        STEPS:
+
+        1. Restricting Access to the Topics Page 
+        2. Restricting Access to the New Topic Page 
+        3. Restricting Access to the New Entry Page 
+        4. Restricting Access to the Edit Entry Page 
+
+        NOTE:
+
+        1. Once user logged out, user can:
+           -see topics
+           -register menu and
+           -login menu
+        2. To View, Add, Edit topics user must login first. 
+
+        modified:   README.md
+        modified:   learning_log/settings.py
+        modified:   learning_logs/views.py
