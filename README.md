@@ -126,3 +126,27 @@ Making Pages:
         new file:   users/models.py
         new file:   users/tests.py
         new file:   users/views.py
+
+
+#### 13. The Login Page and 'Hello, admin'
+
+        STEPS:
+
+        1. Setup default auth urls by including
+           django.contrib.auth.urls
+        2. Create login template
+        3. Linking to the Login Page
+        4. Using the Login Page
+           - If you are still logged in as superuser,
+             do logout
+           - Go go : http://127.0.0.1:8000/users/login
+           - Login as admin
+           - You will see 'Hello, admin'
+           - :)
+           
+        modified:   README.md
+        modified:   learning_log/urls.py
+        modified:   learning_logs/templates/learning_logs/base.html
+        new file:   users/templates/registration/login.html
+        new file:   users/urls.py
+
