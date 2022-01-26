@@ -69,3 +69,12 @@ Making Pages:
         new file:   learning_logs/templates/learning_logs/topics.html
         modified:   learning_logs/urls.py
         modified:   learning_logs/views.py
+
+
+#### 8. Create detail page for a single topic
+
+        modified:   README.md
+        new file:   learning_logs/templates/learning_logs/topic.html
+        modified:   learning_logs/templates/learning_logs/topics.html
+        modified:   learning_logs/urls.py
+        modified:   learning_logs/views.py
