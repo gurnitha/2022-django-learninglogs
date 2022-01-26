@@ -420,4 +420,24 @@ Making Pages:
         modified:   learning_logs/views.py
 
 
+### STYLING: Styling Learning Log
+---------------------------------
+
+
+#### 22. Install the django-bootstrap4 App
+
+        STEPS:
+
+        1. Install django-bootstrap4: 
+           λ  pip install django-bootstrap4
+        2. Register bootstrap4 in settings.py
+        3. Modifying base.html
+
+        modified:   README.md
+        modified:   learning_log/settings.py
+        modified:   learning_logs/templates/learning_logs/base.html
+
+
+
+
 
