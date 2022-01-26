@@ -280,3 +280,33 @@ Making Pages:
         modified:   README.md
         modified:   learning_logs/migrations/0003_topic_owner.py
         modified:   learning_logs/models.py
+
+
+#### 18. Restricting Topics Access to Appropriate Users
+
+        NOTE:
+
+        Currently, if you’re logged in, you’ll be 
+        able to see all the topics, no matter 
+        which user you’re logged in as. 
+        We’ll change that by showing users only the 
+        topics that belong to them. 
+
+        STEPS:
+
+        1. Make the following change to the topics() function in views.py
+        topics = Topic.objects.filter(
+                owner=request.user).order_by('date_added')
+
+
+        NOTE:
+
+        1. There are two users for now:
+           - admin as superuser
+           - testuser1 as normal user
+        2. Now admin can view on its own topics
+        3. Now testuser1 also can view only its own topics
+
+        modified:   README.md
+        modified:   learning_logs/views.py       
+
