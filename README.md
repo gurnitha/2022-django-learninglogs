@@ -3,6 +3,13 @@ This is my exercise base on the tutorials on Youtube made by Learning Python: ht
 
 Github repository: https://github.com/gurnitha/2022-django-learninglogs
 
+Note:
+
+Some notes in some titles in this README.md files
+were quoted from the book of PYTHON CRASH COURSE 2ND EDITION.
+
+A practical book of Python and Django written by ERIC MATTHES.
+
 
 #### 1. Create django project
 
@@ -378,5 +385,39 @@ Making Pages:
 
         modified:   README.md
         modified:   learning_logs/views.py
+
+
+#### 21. Associating New Topics with the Current User
+
+        Currently, our page for adding new topics is broken, 
+        because it doesn’t 
+        associate new topics with any particular user. 
+        If you try adding a new topic, 
+        you’ll see the error message IntegrityError 
+        along with NOT NULL constraint 
+        failed: learning_logs_topic.owner_id. 
+
+        Django’s saying you can’t create a new 
+        topic without specifying a value for the topic’s 
+        owner field.
+
+        STEPS:
+
+        1. Modify new_topic view method with this:
+
+                        if form.is_valid():
+                        new_topic = form.save(commit=False)
+                        new_topic.owner = request.user
+                        new_topic.save()
+
+        2. Test it out :)
+
+        NOTE:
+
+        1. The broken thigs are gone now
+
+        modified:   README.md
+        modified:   learning_logs/views.py
+
 
 
