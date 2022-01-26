@@ -310,3 +310,43 @@ Making Pages:
         modified:   README.md
         modified:   learning_logs/views.py       
 
+
+#### 19. Protecting a User’s Topics
+
+        NOTE:
+
+        We haven’t restricted access to the topic 
+        pages yet, so any registered user 
+        could try a bunch of URLs, 
+        like http://localhost:8000/topics/1/, and retrieve 
+        topic pages that happen to match.
+
+        So, if admin login, he can:
+
+        1. View testuser1 topics
+        2. Edit testuser1 topic
+
+        We will protect user's topics now
+
+        STEPS:
+
+        In learning_logs/views.py
+
+        1. Import: from django.http import Http404
+        2. Modify topic view method
+        3. Test it out :)
+
+        NOTE:
+
+        1. If admin logged in, it can view only
+           its own topics
+        2. But it can edit testuser1 topic, if he
+           goes to: http://127.0.0.1:8000/edit_entry/8/
+
+           Note: entry 8 is belong to testuser1
+
+        modified:   README.md
+        modified:   learning_logs/views.py  
+
+
+
